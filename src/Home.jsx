@@ -1,27 +1,37 @@
 import './App.css';
 import React from 'react';
-import logo from './logo.svg';
+import folderLogo from './folder_icon.png';
+import { Container, Divider, Grid, Header, Image } from 'semantic-ui-react'
+
 
 class Home extends React.Component {
     render() {
         return (
-            <div className="App">
-                <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-                </header>
-            </div>
-
+          <div>
+            <Container>
+              <Header size='huge'>hymakes</Header>
+            </Container>
+            <Divider hidden/>
+            <Container className='FolderGrid'>
+              <Grid columns='equal'>
+                <Grid.Row columns={3}>
+                  <Grid.Column><Image size='medium' fluid src={folderLogo} alt="folder"/>folder label</Grid.Column>
+                  <Grid.Column><Image size='medium' fluid src={folderLogo} alt="folder"/>folder label</Grid.Column>
+                  <Grid.Column><Image size='medium' fluid src={folderLogo} alt="folder"/>folder label</Grid.Column>
+                </Grid.Row>
+                <Grid.Row columns={3}>
+                  <Grid.Column><Image size='medium' fluid src={folderLogo} alt="folder"/>folder label</Grid.Column>
+                  <Grid.Column><Image size='medium' fluid src={folderLogo} alt="folder"/>folder label</Grid.Column>
+                  <Grid.Column><Image size='medium' fluid src={folderLogo} alt="folder"/>folder label</Grid.Column>
+                </Grid.Row>
+                <Grid.Row columns={3}>
+                  <Grid.Column><Image size='medium' fluid src={folderLogo} alt="folder"/>folder label</Grid.Column>
+                  <Grid.Column><Image size='medium' fluid src={folderLogo} alt="folder"/>folder label</Grid.Column>
+                  <Grid.Column><Image size='medium' fluid src={folderLogo} alt="folder"/>folder label</Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </Container>
+          </div>
         );
     }
 
